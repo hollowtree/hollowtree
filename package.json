@@ -6,7 +6,7 @@
     "private": true,
     "scripts": {
         "client": "node client/build/dev-server.js",
-        "server": "node server/app.js",
+        "server": "nodemon server/app.js",
         "start": "npm run client && npm run server",
         "build": "node client/build/build.js",
         "unit": "cross-env BABEL_ENV=test karma start client/test/unit/karma.conf.js --single-run",
@@ -20,6 +20,7 @@
         "koa-router": "^7.2.1",
         "koa-static": "^3.0.0",
         "mongoose": "^4.10.8",
+        "nodemon": "^1.11.0",
         "vue": "^2.3.3",
         "vue-infinite-scroll": "^2.0.1",
         "vue-router": "^2.3.1",
